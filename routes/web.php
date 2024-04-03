@@ -21,4 +21,6 @@ Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/logout', [LogoutController::class, 'logout']);
 
-Route::post('/tasks', [TaskController::class, 'store'])->name('tasks.store');
+Route::post('/tasks', [TaskController::class, 'store'])/* ->name('tasks.store') */;
+Route::patch('/tasks/{task}/complete', [TaskController::class, 'complete'])/* ->name('tasks.complete') */;
+Route::delete('/tasks/{task}', [TaskController::class, 'destroy'])/* ->name('tasks.destroy') */;
