@@ -5,6 +5,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\TaskController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,3 +21,4 @@ Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/logout', [LogoutController::class, 'logout']);
 
+Route::post('/tasks', [TaskController::class, 'store'])->name('tasks.store');
