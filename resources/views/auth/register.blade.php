@@ -15,5 +15,6 @@
         <input type="password" name="password_confirmation" placeholder="confirm password">
         <input type="submit" value="Registrarse">
     </form>
+    <p>Ya tienes una cuenta? <a href="/login">Inicia Sesión</a></p>
 </body>
 </html>
