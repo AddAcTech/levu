@@ -52,8 +52,10 @@
             <input type="text" name="username" placeholder="Usuaio/Correo" class="p-2 border bg-[#f8f9fa] ">
             <input type="password" name="password" placeholder="Contraseña" class="p-2 border bg-[#f8f9fa] ">
             <input type="submit" value="Iniciar sesión" class="p-2 bg-[#000222] rounded-full text-white font-bold">
+            @if ($errors->any())
+                <p class="text-red-400">Hubo un error con las credenciales</p>
+            @endif
         </form>
-        
         <p class="text-[#969da2] text-center">No tienes una cuenta? <a href="/register" class="text-[#2aaada] font-bold">Registrate</a></p>
     </section>
 </body>

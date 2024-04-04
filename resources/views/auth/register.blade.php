@@ -16,6 +16,9 @@
         </div>
         <input type="password" name="password" placeholder="Contraseña" class="p-2 border bg-[#f8f9fa]">
         <input type="password" name="password_confirmation" placeholder="Confirmar contraseña " class="p-2 border bg-[#f8f9fa]">
+        @if ($errors->any())
+                <p class="text-red-400">Hubo un error con las credenciales</p>
+        @endif
         <input type="submit" value="REGISTRARSE" class="p-2 border border-[#3fc2f3] font-bold rounded-md hover:bg-[#3fc2f3] transition-all ease-in-out duration-300">
         <p class="text-[#969da2]">Ya tienes una cuenta? <a href="/login" class="text-[#2aaada] hover:underline font-bold">Inicia Sesión</a></p>
     </form>
