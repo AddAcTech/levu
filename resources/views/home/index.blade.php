@@ -62,6 +62,9 @@
             <label for="body">Cuerpo de la tarea:</label><br>
             <textarea id="body" name="body" class="p-2 border bg-[#f8f9fa] w-full"></textarea><br>
             <input type="submit" value="Agregar Tarea" class="border border-black px-4 py-2 rounded-full w-full my-2 font-bold ">
+            @if ($errors->any())
+                <p class="text-red-400">Ocurrio Un Error</p>
+            @endif
         </form>
 
         <div class="flex flex-wrap gap-2 justify-center px-4 mt-2">
